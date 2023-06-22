@@ -2,16 +2,17 @@ PRE-REQUISITE:
 
 1. An AWS account with required permissions to create the required resource which we are creating through this terraform code.
 
-2. An AWS AMI with pre-configured Monogo DB and Postfix installed, you can use this Ansible Playbook to install mongo DB and postfix server in your ec2 and create an AMI of that EC2 instance.
+2. An AWS AMI with pre-configured Monogo DB and Postfix installed, you can use [this](https://github.com/nikhil1828/ansible-playbook-for-mongodb-and-postfix.git) Ansible Playbook to install mongo DB and postfix server in your ec2 and create an AMI of that EC2 instance.
 
 
 STEPS TO RUN THIS CODE:
 
 1. Export your AWS account credentials in your terminal like this :
-
+```
     export AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
     export AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
     export AWS_DEFAULT_REGION=us-west-2
+```
 
 2. Switch to the home directory of this repository and modify "terraform.tfvars" file as per your AWS environment.
 
